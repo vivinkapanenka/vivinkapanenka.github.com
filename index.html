@@ -1,20 +1,16 @@
-<html> 
+<html>
 <head> 
-<script> 
-
-function changeImage()
-{
-var img = document.getElementById("image");
-img.src="images/test2";
-return false;
-}
-
-</script>
-
+    <script> 
+        function changeImage() {
+            var img = document.getElementById("image");
+            img.src = "images/test2"; // Make sure 'test2' is the correct image file path and extension (e.g., .jpg or .png)
+            return false;
+        }
+    </script>
 </head>
 <body>
-<img id="image" src="images/test" />
-<br><br><br>
-<button id="clickme" onclick="changeImage();">Click to change image!</button>
+    <img id="image" src="images/test" /> <!-- Make sure 'test' is the correct image file path and extension -->
+    <br><br><br>
+    <button id="clickme" onclick="changeImage();">Click to change image!</button>
 </body>
 </html>
