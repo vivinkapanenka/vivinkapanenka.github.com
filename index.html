@@ -1,16 +1,22 @@
 <html>
 <head> 
     <script> 
-        function changeImage() {
+        function LEFT() {
             var img = document.getElementById("image");
-            img.src = "images/test2"; // Make sure 'test2' is the correct image file path and extension (e.g., .jpg or .png)
+            img.src = "images/left"; // Make sure 'test2' is the correct image file path and extension (e.g., .jpg or .png)
+            return false;
+        }
+        function RIGHT() {
+            var img = document.getElementById("image");
+            img.src = "images/right"; // Make sure 'test2' is the correct image file path and extension (e.g., .jpg or .png)
             return false;
         }
     </script>
 </head>
 <body>
-    <img id="image" src="images/test" /> <!-- Make sure 'test' is the correct image file path and extension -->
+    <img id="image" src="images/left" /> <!-- Make sure 'test' is the correct image file path and extension -->
     <br><br><br>
-    <button id="clickme" onclick="changeImage();">Click to change image!</button>
+    <button id="clickme" onclick="LEFT();">LEFT!</button>
+    <button id="clickme" onclick="RIGHT();">RIGHT!</button>
 </body>
 </html>
